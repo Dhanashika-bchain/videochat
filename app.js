@@ -1,4 +1,4 @@
-const signalingServer = new WebSocket('ws://localhost:8080');
+const signalingServer = new WebSocket('ws://https://videochat-oqrl.onrender.com/');
 let localVideo = document.getElementById('localVideo');
 let remoteVideo = document.getElementById('remoteVideo');
 let username, peerConnection, localStream;
