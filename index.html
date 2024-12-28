@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRTC Video Call</title>
+    <style>
+        video {
+            width: 45%;
+            margin: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video Call</h1>
+    <div>
+        <label for="username">Enter Your Username:</label>
+        <select id="username">
+            <option value="Dhanashika">Dhanashika</option>
+            <option value="Rohini">Rohini</option>
+        </select>
+        <button onclick="login()">Login</button>
+    </div>
+    <div id="call-controls" style="display:none;">
+        <label for="callee">Call Username:</label>
+        <select id="callee">
+            <option value="Dhanashika">Dhanashika</option>
+            <option value="Rohini">Rohini</option>
+        </select>
+        <button onclick="startCall()">Start Call</button>
+    </div>
+    <video id="localVideo" autoplay muted></video>
+    <video id="remoteVideo" autoplay></video>
+    <script src="app.js"></script>
+</body>
+</html>
