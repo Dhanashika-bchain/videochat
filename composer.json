@@ -1,0 +1,17 @@
+{
+    "name": "new/video_chat",
+    "description": "webrtc",
+    "autoload": {
+        "psr-4": {
+            "New\\VideoChat\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dhanashika"
+        }
+    ],
+    "require": {
+        "cboden/ratchet": "^0.4.4"
+    }
+}
