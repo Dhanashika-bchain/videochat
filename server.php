@@ -41,7 +41,7 @@ $server = \Ratchet\Server\IoServer::factory(
             new SignalingServer()
         )
     ),
-    8080
+    443
 );
 
 $server->run();
